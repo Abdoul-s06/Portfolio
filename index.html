@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdoul Salma — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">AS</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hero-label">Computer Science Student</p>
+        <h1 class="hero-greeting">Hi, I'm Abdoul.</h1>
+        <blockquote class="hero-quote">
+          "Code is the closest thing we have to a superpower."
+        </blockquote>
+        <div class="hero-actions">
+          <!-- Swap href with your real resume path if needed -->
+          <a href="assets/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Resume</a>
+          <a href="#projects" class="btn btn-ghost">View projects</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img
+          id="headshot"
+          class="hero-photo"
+          src="assets/headshot.png"
+          alt="Abdoul Salma headshot"
+        >
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image project-shots">
+            <img class="shot-home" src="assets/questlog-home-crop.png" alt="QuestLog home page with game search">
+            <img class="shot-discover" src="assets/questlog-discover-crop.png" alt="Popular games on QuestLog">
+            <img class="shot-library" src="assets/questlog-library-crop.png" alt="QuestLog library with tracked games and scores">
+            <img class="shot-signup" src="assets/questlog-signup-crop.png" alt="QuestLog create account form">
+          </div>
+          <div class="project-body">
+            <h3>QuestLog</h3>
+            <p>
+              A full-stack video game tracking and discovery app with real-time global searches,
+              personalized libraries, and customizable user profiles.
+            </p>
+            <ul class="tech-stack">
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <a href="https://github.com/SayonKiruba/QuestLog" class="btn btn-github" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image project-shots project-shots-cashflow">
+            <img class="shot-app" src="assets/cashflow-app.png" alt="CashFlow window for adding and removing expenses">
+            <img class="shot-entry" src="assets/cashflow-entry.png" alt="CashFlow expense row for rent">
+            <img class="shot-delete" src="assets/cashflow-delete.png" alt="CashFlow confirm delete dialog">
+          </div>
+          <div class="project-body">
+            <h3>CashFlow</h3>
+            <p>
+              A modular desktop financial management app for tracking personal expenditures,
+              built with PyQt6 and an SQLite backend for persistent storage.
+            </p>
+            <ul class="tech-stack">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>PyQt6</li>
+              <li>SQLite</li>
+            </ul>
+            <a href="https://github.com/Abdoul-s06/CashFlow" class="btn btn-github" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+      <div class="projects-more">
+        <a href="https://github.com/Abdoul-s06" class="btn btn-ghost" target="_blank" rel="noopener">
+          See more projects
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills &amp; Tech</h2>
+
+      <div class="skills-group">
+        <h3 class="skills-label">Languages</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8.5 3l-1.2 12.3L12 18.5l4.7-3.2L15.5 3H8.5zm6.2 11.4L12 16.5l-2.7-2.1.2-2.2h5l.2 2.2zM14.8 9H9.2l.2-2h5.2l.2 2z"/></svg></span> Java</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C9.2 2 8 3.8 8 5.5c0 2.2 1.8 3.8 4 5.2 2.2-1.4 4-3 4-5.2C16 3.8 14.8 2 12 2zm-2.5 14.2c-2.4.7-4 1.9-4 3.3C5.5 21.5 8.4 23 12 23s6.5-1.5 6.5-3.5c0-1.4-1.6-2.6-4-3.3-.7.4-1.6.6-2.5.6s-1.8-.2-2.5-.6z"/></svg></span> Python</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M10.5 3L3 21h3.2l1.5-4h8.6l1.5 4H21L13.5 3h-3zm.9 10L12 7.5 12.6 13h-1.2z"/></svg></span> C++</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v3H4V4zm0 6.5h10v3H4v-3zM4 17h16v3H4v-3z"/></svg></span> HTML</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 4h14l-1.2 14.5L12 21l-5.8-2.5L5 4zm9.2 5.2H9.1l.2 2.2h4.7l-.3 3.4L12 15.5l-1.7-.5-.1-1.2H8.3l.2 2.4L12 17.5l3.5-1.2.5-5.1z"/></svg></span> CSS</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 4h18v16H3V4zm9.2 4.2c1.8 0 3 .8 3.5 2.1l-1.7.9c-.2-.6-.7-1-1.6-1-.9 0-1.5.4-1.5 1 0 .6.4.8 1.5 1.1l.8.2c2 .5 3.1 1.4 3.1 3.2 0 2-1.5 3.2-3.7 3.2-1.9 0-3.3-.9-3.9-2.4l1.8-.9c.3.8.9 1.3 2 1.3 1 0 1.6-.4 1.6-1.1 0-.6-.4-.9-1.5-1.2l-.8-.2c-1.9-.5-3-1.5-3-3.2 0-1.9 1.5-3.1 3.4-3.1z"/></svg></span> JavaScript</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 5h16v3H4V5zm0 5.5h16v3H4v-3zM4 16h10v3H4v-3z"/></svg></span> SQL</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 4h10v2H7V4zm-2 4h14v2H5V8zm2 4h10v2H7v-2zm-2 4h14v2H5v-2zm2 4h10v2H7v-2z"/></svg></span> Assembly</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="skills-label">Tools</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a4 4 0 00-1.2 7.8V12l-3.5 2.1A4 4 0 108.8 16l3.2-1.9 3.2 1.9A4 4 0 1016.7 14L13.2 12V9.8A4 4 0 0012 2z"/></svg></span> Git</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 3c1.5 0 2.8.5 3.8 1.3L8.3 14.8A7 7 0 0112 5zm0 14a7 7 0 01-3.8-1.3l7.5-8.5A7 7 0 0112 19z"/></svg></span> Linux</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h10l4 4v14H5V3zm9 1.5V8h3.5L14 4.5zM8 11h8v2H8v-2zm0 4h8v2H8v-2z"/></svg></span> Jupyter</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.01 1.71.12 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.82-2.34 4.67-4.57 4.92.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg></span> GitHub</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v12H4V4zm2 2v8h12V6H6zm-2 12h16v2H4v-2z"/></svg></span> VS Code</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg></span> IntelliJ</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 6H4v12h4c3.3 0 6-2.7 6-6s-2.7-6-6-6zm0 10H6V8h2c2.2 0 4 1.8 4 4s-1.8 4-4 4zm8-8h4v2h-4V8zm0 4h4v2h-4v-2zm0 4h4v2h-4v-2z"/></svg></span> JSON</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8.5 4L4 12l4.5 8h2.2L6.7 12 10.7 4H8.5zm7 0l4.5 8-4.5 8h-2.2l4-8-4-8H15.5z"/></svg></span> XML</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 5h16v3H4V5zm0 5h10v3H4v-3zm0 5h16v3H4v-3z"/></svg></span> Microsoft 365</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="skills-label">Libraries</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 4h14v4H5V4zm0 6h14v4H5v-4zm0 6h14v4H5v-4z"/></svg></span> Pandas</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 4h2v16H7V4zm4 4h2v12h-2V8zm4-2h2v14h-2V6zm4 6h2v8h-2v-8z"/></svg></span> NumPy</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 18V6h2v10h3v2H4zm5-4l3-4 3 2.5L19 6l1.5 1.2-5.5 8.3-3-2.5L9 16z"/></svg></span> Matplotlib</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 18c3-6 6-9 8-9s5 3 8 9H4zm8-11a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg></span> Seaborn</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 5h16v12H4V5zm2 2v8h12V7H6zm-2 12h16v2H4v-2z"/></svg></span> Tkinter</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1zm1 2v12h12V6H6zm2 2h8v2H8V8zm0 4h5v2H8v-2z"/></svg></span> PyQt6</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="skills-label">Concepts</h3>
+        <ul class="skill-chips">
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 6c0-1.1 3.6-2 8-2s8 .9 8 2-3.6 2-8 2-8-.9-8-2zm0 4c0 1.1 3.6 2 8 2s8-.9 8-2v3c0 1.1-3.6 2-8 2s-8-.9-8-2v-3zm0 5c0 1.1 3.6 2 8 2s8-.9 8-2v3c0 1.1-3.6 2-8 2s-8-.9-8-2v-3z"/></svg></span> SQLite</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 4l4 4h-3v4h-2V8H8l4-4zm0 16l-4-4h3v-4h2v4h3l-4 4z"/></svg></span> CRUD</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 4h10v4H7V4zm-3 6h16v4H4v-4zm3 6h10v4H7v-4z"/></svg></span> OOP</li>
+          <li class="skill-chip"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h7v7H4V4zm9 0h7v3h-7V4zm0 5h7v3h-7V9zM4 13h7v7H4v-7zm9 4h7v3h-7v-3zm0-4h7v2h-7v-2z"/></svg></span> Schema Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="education-card">
+        <div class="education-header">
+          <h3>University of Ontario Institute of Technology (UOIT)</h3>
+          <span class="education-date">Expected 2028</span>
+        </div>
+        <p class="education-degree">Bachelor of Computer Science</p>
+        <p class="education-coursework-label">Relevant coursework</p>
+        <ul class="coursework-list">
+          <li>Data Structures &amp; Algorithms</li>
+          <li>Software Design and Analysis</li>
+          <li>Software Systems Development and Integration</li>
+          <li>Discrete Mathematics for Computer Scientists</li>
+          <li>Scientific Data Analysis</li>
+          <li>Design and Analysis of Algorithms</li>
+          <li>Web Development</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-text">
+        <p>
+          I'm a Computer Science student who learns best by building real projects end to end.
+          I care about clean interfaces, solid structure, and turning ideas into tools people can actually use.
+          I'm especially interested in full-stack web development, software design, and desktop applications.
+          I'm looking for internship and co-op roles where I can contribute to a team, write meaningful code,
+          and keep growing as a developer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-box">
+        <p class="contact-intro">Let's connect — I'd love to hear about opportunities or collaborate on something cool.</p>
+        <div class="contact-links">
+          <a href="mailto:abdoulrahmansalma2006@gmail.com" class="contact-link">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            <span>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">abdoulrahmansalma2006@gmail.com</span>
+            </span>
+          </a>
+          <a href="https://github.com/Abdoul-s06" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </span>
+            <span>
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">github.com/Abdoul-s06</span>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/abdoul-salma/" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79zM6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </span>
+            <span>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">linkedin.com/in/abdoul-salma</span>
+            </span>
+          </a>
+          <a href="assets/resume.pdf" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8v-2zm0-4h8v2H8v-2z"/></svg>
+            </span>
+            <span>
+              <span class="contact-link-label">Resume</span>
+              <span class="contact-link-value">Download PDF</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-note">Currently looking for internship and co-op opportunities.</p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="mailto:abdoulrahmansalma2006@gmail.com">Email</a>
+      <a href="https://github.com/Abdoul-s06" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/abdoul-salma/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Abdoul Salma. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
